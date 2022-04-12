@@ -1,0 +1,64 @@
+﻿<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 footer-grid-agileits-w3ls text-left">
+                <h3>Hakkımızda</h3>
+                <p>
+                    Lorem ipsum dolor sit Amet, ipsum dolor sit Lorem Amet.Lorem ipsum dolor sit Amet, ipsum dolor sit Lorem AmetLorem ipsum dolor sit Amet, ipsum dolor sit Lorem Amet
+                    Lorem ipsum dolor sit Amet, ipsum dolor sit Lorem AmetLorem ipsum dolor sit Amet, ipsum dolor sit Lorem AmetLorem ipsum dolor sit Amet, ipsum dolor sit Lorem Amet
+                    Lorem ipsum dolor sit Amet, ipsum dolor sit Lorem AmetLorem ipsum dolor sit Amet, ipsum dolor sit Lorem AmetLorem ipsum dolor sit Amet, ipsum dolor sit Lorem Amet
+                </p>
+                <div class="read">
+                    <a href="/About/Index/" class="btn btn-primary read-m">Devamını Oku</a>
+                </div>
+            </div>
+            <div class="col-lg-4 footer-grid-agileits-w3ls text-left">
+
+                
+                    @await Component.InvokeAsync("BlogLast3Post")
+                
+            </div>
+            <!-- subscribe -->
+            <div class="col-lg-4 subscribe-main footer-grid-agileits-w3ls text-left">
+                <h2>Haber Bültenine Abone Ol</h2>
+                @await Html.PartialAsync("~/Views/Comment/PartialAddComment.cshtml")@*Burayı İncele farklı yere yönlendirme olabilir*@
+
+            <!-- //subscribe -->
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer-cpy text-center">
+            <div class="footer-social">
+                <div class="copyrighttop">
+                    <ul>
+                        <li class="mx-3">
+                            <a class="facebook" href="#">
+                                <i class="fab fa-facebook-f"></i>
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="facebook" href="#">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+            <div class="w3layouts-agile-copyrightbottom">
+                <p>
+                    © @DateTime.Now.Year Weblog
+                </p>
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+</footer>
